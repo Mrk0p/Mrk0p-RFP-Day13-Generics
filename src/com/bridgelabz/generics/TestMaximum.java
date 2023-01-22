@@ -1,18 +1,19 @@
 package com.bridgelabz.generics;
 
 public class TestMaximum {
-    
+
     public static void main(String[] args) {
 
-        Integer number1 = 2;
-        Integer number2 = 3;
-        Integer number3 = 5;
-        Integer maximumNum = testMax(number1,number2,number3);
+        Float number1 = 2.5f;
+        Float number2 = 3.1f;
+        Float number3 = 1.19f;
+        Float maximumNum = testMax(number1,number2,number3);
         System.out.println("Maximum number is : "+maximumNum);
     }
-    public static Integer testMax(Integer number1, Integer number2, Integer number3) {
 
-        Integer maximumNumber = number1;
+    public static Float testMax(Float number1, Float number2, Float number3) {
+
+        Float maximumNumber = number1;
         if(number2.compareTo(maximumNumber) > 0 )
         {
             maximumNumber = number2;
